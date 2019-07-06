@@ -150,9 +150,9 @@ NOTE: Take Backup of you ROM before Trying to Deodex. if anything goes Wrong You
  if this method didn't work for you then let us known your device details..
 
 <h1 id="Remove_smalipatcher">How fix bootloops caused by SmaliPatcher</h1>
-<h2>If your phone happened to bootloop means the rom isn't compatible with SmaliPatcher and if you wanna spoof then the only way is to switch to a custom ROM. Meanwhile you can fix it by doing the following steps:</h2>
+<p>If your phone happened to bootloop means the rom isn't compatible with SmaliPatcher and if you wanna spoof then the only way is to switch to a custom ROM. Meanwhile you can fix it by doing the following steps:</p>
 <ol>
-	<liBoot into TWRP</li>
+	<li>Boot into TWRP</li>
 	<li>Go to the Menu "Advanced" then click  "File Manager"</li>
 	<li>Navigate to: data -> adb -> modules -> module directory (in this case "fomey.smalipatcher") -> Folder icon (bottom right) -> Delete</li>
 </ol>
