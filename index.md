@@ -131,13 +131,13 @@ NOTE: Take Backup of you ROM before Trying to Deodex. if anything goes Wrong You
 	<li>Swipe from Left and tap On <b>"Device Manager"</b>.</li>
 	<li>Now tap on "One-Click" tab on top section of screen in the app.</li>
 	<li>If You have Granted Root Properly You Can see "(de)Odex ROM" option tap on it.</li>
-	<li>Now You can see few options set them as below:
-		"Operations : Deodex"
-		"/system/app : Off"
-		"/system/priv-app : Off"
-		"/system/framework : On"
-		"Rebuild classes.dex if needed : On"
-		"Zip-align system APKs : On"
+	<li>Now You can see few options set them as below:<br>
+		"Operations : Deodex"<br>
+		"/system/app : Off"<br>
+		"/system/priv-app : Off"<br>
+		"/system/framework : On"<br>
+		"Rebuild classes.dex if needed : On"<br>
+		"Zip-align system APKs : On"<br>
 		(Basically last 3 button should be on with Operation set to Deodex).</li>
 	<li>Now Click On OK and keep it on charging. (Will take 45mins to 3 hours depends on Rom so make sure app never get closed.)</li>
 	<li>When you get Notification Or In app pop-up Process completed It'll ask to reboot Click on reboot/ok.</li>
