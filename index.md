@@ -29,7 +29,8 @@
       </a>
       <div class="list-group collapse" id="item-2">
          <a href="#How_to_hide_root" class="list-group-item"><i class="fas fa-angle-right mr-2"></i>How to hide root</a>
-	 <a href="#How_to_deodex_rom" class="list-group-item"><i class="fas fa-angle-right mr-2"></i>How to Deodex your Rom</a>     
+	 <a href="#How_to_deodex_rom" class="list-group-item"><i class="fas fa-angle-right mr-2"></i>How to Deodex your Rom</a>
+	 <a href="#Remove_smalipatcher" class="list-group-item"><i class="fas fa-angle-right mr-2"></i>How fix bootloops caused by SmaliPatcher</a>
       </div>
 	   <a href="#item-3" class="list-group-item" data-toggle="collapse">
       <i class="fas fa-angle-right mr-2"></i>Root Guide (Magisk + Smali) [Samsung]
@@ -147,6 +148,14 @@ NOTE: Take Backup of you ROM before Trying to Deodex. if anything goes Wrong You
  if process fails before 70% then clear data of 3C app and follow from step 3.
  if process gets failed instantly Then make sure the extra_odex.zip is placed correctly. if it is then You need to change your ROM.
  if this method didn't work for you then let us known your device details..
+
+<h1 id="Remove_smalipatcher">How fix bootloops caused by SmaliPatcher</h1>
+<h2>If your phone happened to bootloop means the rom isn't compatible with SmaliPatcher and if you wanna spoof then the only way is to switch to a custom ROM. Meanwhile you can fix it by doing the following steps:</h2>
+<ol>
+	<liBoot into TWRP</li>
+	<li>Go to the Menu "Advanced" then click  "File Manager"</li>
+	<li>Navigate to: data -> adb -> modules -> module directory (in this case "fomey.smalipatcher") -> Folder icon (bottom right) -> Delete</li>
+</ol>
 
 <!-- CD1337 -->
 <h1 id="Root_Samsung">Root Guide (Magisk + Smali) [Samsung]</h1>
