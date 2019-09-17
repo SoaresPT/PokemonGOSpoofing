@@ -13,7 +13,7 @@
 <li>Search "Edxposed" (You'll get 2 options)</li>
 <li>Install Edxposed (YAHFA). If nothing shows up get it <a href="https://github.com/ElderDrivers/EdXposed/releases/download/0.4.5.1/magisk-EdXposed-YAHFA-v0.4.5.1_beta.4463.-release.zip" target="_blank" rel="noopener">here</a>.</li>
 <li>Click Reboot when installed.</li>
-<li>Open Edxposed installer app.</li>
+<li>Install and Open Edxposed installer app. Download <a href="https://github.com/solohsu/XposedInstaller/releases/download/Ed_v2.2.4/EdXposedInstaller_v2.2.4-release.apk" target="_blank">here</a></li>
 <li>Go to download section and Search "Fake Mock Location"</li>
 <li>Click on Fake Mock location &gt;&gt;Click versions</li>
 <li>Install the latest version of Fake Mock Location (ver: 1.1 maybe)</li>
