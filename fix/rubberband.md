@@ -1,4 +1,6 @@
-<p>Smalipatcher was confirmed "broken" on the newest versions of Google Play Services. Read more <a href="https://forum.xda-developers.com/showpost.php?p=80250832&amp;postcount=3683" target="_blank" rel="noopener">here.</a></p>
+<html>
+  <body>
+    <p>Smalipatcher was confirmed "broken" on the newest versions of Google Play Services. Read more <a href="https://forum.xda-developers.com/showpost.php?p=80250832&amp;postcount=3683" target="_blank" rel="noopener">here.</a></p>
 <p>There's 2 possible solutions to fix the rubberband.&nbsp;</p>
 <p>First go to GPS JoyStick settings and click on "<strong>Select Background Thread</strong>" and change it to Java. Start the app and check if rubberband is gone. If it still happens follow this:</p>
 <p>&nbsp;</p>
@@ -19,3 +21,5 @@
 <li>Open Fake mock location app and tick on top left corner (All apps)</li>
 <li>Reboot one last time and start Spoofing</li>
 </ol>
+  </body>
+</html>
