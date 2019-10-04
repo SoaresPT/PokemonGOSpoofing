@@ -17,6 +17,7 @@
 <h1> Welcome to the Pokemon GO Spoofing guide </h1>
 <div class="just-padding">
    <div class="list-group list-group-root card">
+	   <a href="./gpx.html" class="list-group-item"><i class="fas fa-angle-right mr-2"></i>GPX GENERATOR</a>
       <a href="#item-1" class="list-group-item" data-toggle="collapse">
       <i class="fas fa-angle-right mr-2"></i>Unrooted Devices
       </a>
