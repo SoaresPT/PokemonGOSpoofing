@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="ThemeFactory.net">
+
+    <title>Pokemon GO Spoofing Guide | In-depth guide covering everything in order to spoof on Pokemon GO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/jumbotron.css" rel="stylesheet">
+	<!-- Clear the contents of the textarea -->
+	<script type="text/javascript">
+		function clearThis(target){
+			target.value= "";
+		}
+	</script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Pokemon GO Spoofing</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./unrooted.html">Unrooted Guides</a></li>
+            <li><a href="#">Contact</a></li>
+			<li class="active"><a href="./gpx.html">GPX Generator</a></li>			
+          </ul>
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+     <nav class="jumbo-nav">
+      <div class="navigation-wrapper">
+        <div class="navigation">
+          <div class="header-logo">
+            <a href="./index.html">
+              <img src="./images/pokemon_go_logo.png" />
+            </a>
+          </div>
+        </div>
+      
+        <!-- Example row of columns -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-20">
+              <div class="pokeball-wrapper">
+                <img src="./images/pokeball.png" />
+              </div>
+              <div class="enhanced" align="center">
+                <h2>GPX Converter</h2>
+				<label for="text-val">Coordinates:</label><br>
+				<textarea id="text-val" rows="20" cols="40" onfocus="clearThis(this)">Paste your coordinates here...</textarea>
+				<br>
+				<div class="custom-control custom-radio">
+				 <fieldset id="group1">
+					<input type="radio" class="custom-control-input" id="gpx" value="gpx" name="fileformat" checked>
+					<label class="custom-control-label" for="radiogpx">GPX Format (Android)</label>
+					<input type="radio" class="custom-control-input" id="tx" value="txt" name="fileformat">
+					<label class="custom-control-label" for="radiogpx">TXT Format (iOS)</label>
+				</fieldset>
+				</div>
+				<button class="btn btn-default" id="dl-btn">Download</button>
+				<!-- Default checked -->
+				<script>
+					document.getElementById("dl-btn").addEventListener("click", function(){
+						var lines = document.getElementById('text-val').value.split('\n');
+						var gpxtext = '<?xml version="1.0" encoding="UTF-8" ?>\n<gpx>\n<author>SoaresPT#4000</author>\n<desc>Made For pokedex100 Server. Original idea by : Rᴏᴏᴛ＠ᴛᴄʜᴀᴠᴇɪ∶~＃</desc>\n';
+						for(var i = 0;i < lines.length;i++){
+								//gpxtext += '<wpt lat="'+ lines[i].split(',')[0];
+								//gpxtext += ' lon="' + + lines[i].split(',')[1] + '">\n<name>WP' +i+'<name>\n</wpt>\n';
+								gpxtext += '<wpt lat="'+ lines[i].split(',')[0] + ' lon="' + + lines[i].split(',')[1] + '">\n<name>WP' +i+'<name>\n</wpt>\n';
+							}
+						gpxtext +='</gpx>';	
+						var text = document.getElementById("text-val").value;
+						var dt = new Date();
+						var filename = "gpx-" + dt.getFullYear() + dt.getMonth() + dt.getDate() + dt.getHours() + dt.getMinutes() + dt.getSeconds() + "." + document.querySelector('input[name="fileformat"]:checked').value;
+						var blob = new Blob([gpxtext], {
+							type: "text/xml"
+						});				
+						saveAs(blob, filename);
+					}, false);
+				</script>
+				<div>
+				<h2>FAQ</h2>
+				<b>Q: Will this work with FGL Pro?</b><br />
+				A: No. FGL Pro doesn't have that function. Use <a href="http://gpsjoystick.theappninjas.com/faq/" target="_blank">GPS JoyStick</a> for that.<br />
+				<b>Q: Can this be used on iOS/Android?</b><br />
+				A: Yes. Select the appropiate option above and click Download.<br>
+				<b>Q: Where can I find GPX Routes?</b><br>
+				A: You can find already made routes <a href="https://drive.google.com/open?id=1Qor3Hm-ECv0toOft4E1gU8gxqoPyMbP_" target="_blank">here</a> and <a href="https://drive.google.com/drive/folders/18UHdjwNPFJ50cln32DsVl-__jjU0-pxO" target="_blank">here</a><br>
+				<b>Q: How do I import routes?</b><br>
+				A: Open GPS JoyStick click the 3 line menu (☰) on the top-left corner and click GPX Import/Export. Proceed to import any .gpx file that you may have.<br> Afterwards click the Waypoints tab then the green button on the bottom right corner and choose "Create route from all".<br>
+				<b>Q: How can I contact you?</b><br>
+				A: My Discord username is : SoaresPT#4000<br>
+             </div>
+           </div>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+
+    <div class="container">
+      <hr>
+      
+      </div>
+
+      <footer>
+        <p>&copy; <b>Pokémon is Copyright Gamefreak, Nintendo and The Pokémon Company 2001-2016 All images and names owned and trademarked by Nintendo, Niantic, The Pokémon Company, and Gamefreak are property of their respective owners.</b></p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+	<script src="./js/FileSaver.min.js"></script>
+  </body>
+</html>
