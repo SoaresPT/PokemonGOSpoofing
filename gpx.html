@@ -39,9 +39,8 @@
         <div id="navbar" class="navbar-collapse collapse">
 
           <ul class="nav navbar-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./safetynet.html">Fix SafetyNET</a></li>
-		<li class="active"><a href="./gpx.html">GPX Generator</a></li>			
+            <li class="active"><a href="./safetynet.html">Fixing SafetyNET</a></li>
+			<li><a href="./gpx.html">GPX Generator</a></li>			
           </ul>
 
         </div><!--/.navbar-collapse -->
@@ -67,53 +66,24 @@
                 <img src="./images/pokeball.png" />
               </div>
               <div class="enhanced" align="center">
-                <h2>GPX Converter</h2>
-				<label for="text-val">Coordinates:</label><br>
-				<textarea id="text-val" rows="20" cols="40" onfocus="clearThis(this)">Paste your coordinates here...</textarea>
-				<br>
-				<div class="custom-control custom-radio">
-				 <fieldset id="group1">
-					<input type="radio" class="custom-control-input" id="gpx" value="gpx" name="fileformat" checked>
-					<label class="custom-control-label" for="radiogpx">GPX Format (Android)</label>
-					<input type="radio" class="custom-control-input" id="tx" value="txt" name="fileformat">
-					<label class="custom-control-label" for="radiogpx">TXT Format (iOS)</label>
-				</fieldset>
-				</div>
-				<button class="btn btn-default" id="dl-btn">Download</button>
-				<!-- Default checked -->
-				<script>
-					document.getElementById("dl-btn").addEventListener("click", function(){
-						var lines = document.getElementById('text-val').value.split('\n');
-						var gpxtext = '<?xml version="1.0" encoding="UTF-8" ?>\n<gpx>\n<author>SoaresPT#4000</author>\n<desc>Made For pokedex100 Server. Original idea by : Rᴏᴏᴛ＠ᴛᴄʜᴀᴠᴇɪ∶~＃</desc>\n';
-						for(var i = 0;i < lines.length;i++){
-								//gpxtext += '<wpt lat="'+ lines[i].split(',')[0];
-								//gpxtext += ' lon="' + + lines[i].split(',')[1] + '">\n<name>WP' +i+'<name>\n</wpt>\n';
-								gpxtext += '<wpt lat="'+ lines[i].split(',')[0] + ' lon="' + + lines[i].split(',')[1] + '">\n<name>WP' +i+'<name>\n</wpt>\n';
-							}
-						gpxtext +='</gpx>';	
-						var text = document.getElementById("text-val").value;
-						var dt = new Date();
-						var filename = "gpx-" + dt.getFullYear() + dt.getMonth() + dt.getDate() + dt.getHours() + dt.getMinutes() + dt.getSeconds() + "." + document.querySelector('input[name="fileformat"]:checked').value;
-						var blob = new Blob([gpxtext], {
-							type: "text/xml"
-						});				
-						saveAs(blob, filename);
-					}, false);
-				</script>
-				<div>
-				<h2>FAQ</h2>
-				<b>Q: Will this work with FGL Pro?</b><br />
-				A: No. FGL Pro doesn't have that function. Use <a href="http://gpsjoystick.theappninjas.com/faq/" target="_blank">GPS JoyStick</a> for that.<br />
-				<b>Q: Can this be used on iOS/Android?</b><br />
-				A: Yes. Select the appropiate option above and click Download.<br>
-				<b>Q: What is this for?</b><br />
-				A: You can use this for field quests or if you want to make custom routes.<br>					
-				<b>Q: Where can I find GPX Routes?</b><br>
-				A: You can find already made routes <a href="https://drive.google.com/open?id=1Qor3Hm-ECv0toOft4E1gU8gxqoPyMbP_" target="_blank">here</a> and <a href="https://drive.google.com/drive/folders/18UHdjwNPFJ50cln32DsVl-__jjU0-pxO" target="_blank">here</a><br>
-				<b>Q: How do I import routes?</b><br>
-				A: Open GPS JoyStick click the 3 line menu (☰) on the top-left corner and click GPX Import/Export. Proceed to import any .gpx file that you may have.<br> Afterwards click the Waypoints tab then the green button on the bottom right corner and choose "Create route from all".<br>
-				<b>Q: How can I contact you?</b><br>
-				A: My Discord username is : SoaresPT#4000<br>
+                <h2>How to fix SafetyNET</h2>
+<b>Recently Google is making some changes to safetynet and as of now this should cover how to make it pass.</b>
+<br><br>
+<font size="3">Start by deleting any modules you have that help you pass safetynet. Namely the one called "<b>SafetyPatch</b>"<br><br>
+<b>What you need:</b><br><br>
+<a href="https://play.google.com/store/apps/details?id=com.termux">Termux</a> or any other Terminal Emulator that you can download from the playstore.
+<br><br>
+<b>Modules Installation</b>
+<br>You need to install 2 modules :  <b>Busybox for Android NDK</b> and <b>MagiskHide Props Config</b>.<br><br>
+<b>Video for reference:<b><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O_5EJCQH4R0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+<b>Set the device fingerprint via Termux:</b>
+<br><iframe width="560" height="315" src="https://www.youtube.com/embed/3ncROB71y4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+<b>Reboot your phone and check your safetynet</b><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eYdlbYaWoW8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</font>
              </div>
            </div>
           </div>
