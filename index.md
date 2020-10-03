@@ -30,7 +30,6 @@
       </a>
       <div class="list-group collapse" id="item-2">
          <a href="#How_to_hide_root" class="list-group-item"><i class="fas fa-angle-right mr-2"></i>How to hide root</a>
-	 <a href="#How_to_deodex_rom" class="list-group-item"><i class="fas fa-angle-right mr-2"></i>How to Deodex your Rom</a>
 	 <a href="#Remove_smalipatcher" class="list-group-item"><i class="fas fa-angle-right mr-2"></i>How fix bootloops caused by SmaliPatcher</a>
       </div>
 	   <a href="#item-3" class="list-group-item" data-toggle="collapse">
@@ -96,59 +95,18 @@ Then proceed to download and install it accordingly.
 <h1 id="Rooted_Devices">Rooted Devices</h1>
 
 <h2 id="How_to_hide_root">How to properly hide root from Pokemon GO</h2>
-<p>Hiding root from Pokemon GO is fairly simple.<br>Start by opening the Magisk Manager app and click on the highlighted button (picture below) </p>
-<img src="images/magisk_manager.jpg"/>
-<p>Then select Settings (picture below) </p>
-<img src="images/magisk_settings.png"/>
-<p>Then press "Hide Magisk Manager"(4th option) (picture below)</p>
-<img src="images/magisk_manager1.jpg"/>
-<p>Magisk should close in order to change the package name. You can check if it was sucessful by repeating the same steps and checking if now instead of <b>Hide Magisk Manager</b> it says <b>Restore Magisk Manager</b>. This means you're good to go to the next step <span class="glyphicon glyphicon-ok"></span>. If it doesn't you'll have to repeat this step again. Otherwise continue on.</p>
-<img src="images/magisk_manager2.jpg">
-<p>Now click the top left corner button like you did on the first step since we started (first picture) and select <b>Magisk Hide</b></p>
-<img src="images/magisk_manager3.png"/>
+<p>Hiding root from Pokemon GO is fairly simple.<br>Start by opening the Magisk Manager app and click on the highlighted button to open the Settings (picture below) </p>
+<img src="https://i.imgur.com/V3TxZrO.png"/>
+<p>Then activate Magisk Hide option menu followed by clicking on "Hide Magisk Manager"</p>
+<b>The screenshot shows "Restore Magisk Manager" after you hide it which means everything worked.</b>
+<img src="https://i.imgur.com/bVPXEpA.png"/>
+<p>Magisk should close in order to change the package name. Open it again and if a pop-up appears asking to download the full version click OK. You can check if it was sucessful by repeating the same steps and checking if now instead of <b>Hide Magisk Manager</b> it says <b>Restore Magisk Manager</b>. This means you're good to go to the next step <span class="glyphicon glyphicon-ok"></span>. If it doesn't you'll have to repeat this step again. Otherwise continue on.</p>
+<br>
+<p>Now click on the 2nd icon at the bottom followed by <b>Magisk Hide</b></p>
+<img src="https://i.imgur.com/oFRL2b8.png"/>
 <p>There you will find a list of your installed apps. Put a <span class="glyphicon glyphicon-ok"></span> on Pokemon GO </p>
-<img src="images/magisk_manager4.png"/>
+<img src="https://i.imgur.com/uBqU1TC.png"/>
 <p>That's it! Pokemon GO shouldn't detect root anymore. Open it and test. If you do happen to get invalid OS error then check in your internal storage and delete any folder(s) with the name <b>"Magisk"</b>, <b>"Magisk Manager"</b> and retry to open Pokemon GO</p>
-
-<h1 id="How_to_deodex_rom">How to Deodex Any ROM</h1>
-<h2> Stock/custom from Android 6.0 to 8.1.0 without PC (few custom rom 9.0 are supported)</h2>
-
-<p>Requirements</p>
-<ol>
-  <li>Phone Rooted By magisk</li>
-  <li>Twrp (optional but preferred for backup and safety)</li>
-  <li>3C apk with extra odex.zip <a href="https://drive.google.com/file/d/1HwmMCxMidjRc82xMI7uCginerz4Dhazh/view?usp=drivesdk" target="_blank">https://drive.google.com/file/d/1HwmMCxMidjRc82xMI7uCginerz4Dhazh/view?usp=drivesdk</a></li>
-  <li>Patience</li>
-</ol>
-NOTE: Take Backup of you ROM before Trying to Deodex. if anything goes Wrong You can revert back easily.
-
-<p>Steps</p>
-<ol>
-	<li>Download the Zip provided above and extract it.</li>
-	<li>You'll find 2 zip files inside it with name extra_odex.zip and extra_odex_v4.zip.
-	Copy them to your "internal storage/Download" folder. (don't extract these 2). So the both zip files will in Download folder</li>
-	<li>Install the 3C All-in-One Toolbox Pro apk from the Extracted Zip File.</li>
-	<li>Open the App and Grant Magisk su Permission when asked.. or Open Magisk and Grant it from #Superuser.</li>
-	<li>Grant Storage permission and other permission the app asks for.</li>
-	<li>Swipe from Left and tap On <b>"Device Manager"</b>.</li>
-	<li>Now tap on "One-Click" tab on top section of screen in the app.</li>
-	<li>If You have Granted Root Properly You Can see "(de)Odex ROM" option tap on it.</li>
-	<li>Now You can see few options set them as below:<br>
-		"Operations : Deodex"<br>
-		"/system/app : Off"<br>
-		"/system/priv-app : Off"<br>
-		"/system/framework : On"<br>
-		"Rebuild classes.dex if needed : On"<br>
-		"Zip-align system APKs : On"<br>
-		(Basically last 3 button should be on with Operation set to Deodex).</li>
-	<li>Now Click On OK and keep it on charging. (Will take 45mins to 3 hours depends on Rom so make sure app never get closed.)</li>
-	<li>When you get Notification Or In app pop-up Process completed It'll ask to reboot Click on reboot/ok.</li>
-	<li>Reboot can take up to 5-7 mins don't panic. After the device is Rebooted Your ROM is Deodexed.</li>
-</ol>	
-	<b>Note:</b> If process fails after 70%-80% Reboot and try from step 6.
- if process fails before 70% then clear data of 3C app and follow from step 3.
- if process gets failed instantly Then make sure the extra_odex.zip is placed correctly. if it is then You need to change your ROM.
- if this method didn't work for you then let us known your device details..
 
 <h1 id="Remove_smalipatcher">How fix bootloops caused by SmaliPatcher</h1>
 <p>If your phone happened to bootloop means the rom isn't compatible with SmaliPatcher and if you wanna spoof then the only way is to switch to a custom ROM. Meanwhile you can fix it by doing the following steps:</p>
